@@ -6,10 +6,10 @@ app = Flask(__name__)
 
 # MySQL connection configuration
 mysql_config = {
-    'user': 'shar_admin',
-    'password': 'adminadmin',
-    'host': 'shar-db.cojtx1pbfoey.us-east-1.rds.amazonaws.com',
-    'database': 'ShawarmaOrders',
+    'user': 'INSERT_USER',
+    'password': 'INSERT_PASSWORD',
+    'host': 'INSERT_DB_HOST',
+    'database': 'INSERT_DB_NAME',
 }
 
 @app.route('/place_order', methods=['POST'])
