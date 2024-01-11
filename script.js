@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function fetchMenu() {
-    fetch("https://mqpa596gqj.execute-api.us-east-2.amazonaws.com/prod/shawarmahttps://mqpa596gqj.execute-api.us-east-2.amazonaws.com/prod/shawarma")
+    fetch("INSERT_API_ENDPOINT")
         .then(response => response.json())
         .then(menu => {
             const menuDiv = document.getElementById("menu");
@@ -26,7 +26,7 @@ function placeOrder() {
         customer_name: customerName
     };
 
-    fetch("https://mqpa596gqj.execute-api.us-east-2.amazonaws.com/prod/shawarma", {
+    fetch("INSERT_API_ENDPOINT", {
         method: "POST",
         body: JSON.stringify(orderData),
         headers: {
